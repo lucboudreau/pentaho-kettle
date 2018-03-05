@@ -3,7 +3,7 @@
  *
  * Pentaho Data Integration
  *
- * Copyright (C) 2002-2017 by Hitachi Vantara : http://www.pentaho.com
+ * Copyright (C) 2002-2018 by Hitachi Vantara : http://www.pentaho.com
  *
  *******************************************************************************
  *
@@ -3878,6 +3878,7 @@ public class ValueMetaBase implements ValueMetaInterface {
       case TYPE_NUMBER:
         return getNumber( data );
       case TYPE_DATE:
+      case TYPE_TIMESTAMP:
         return getDate( data );
       case TYPE_BIGNUMBER:
         return getBigNumber( data );
